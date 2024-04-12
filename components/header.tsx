@@ -5,9 +5,10 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { links } from "@/lib/data";
 import clsx from "clsx";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Header() {
-  const [activeSection, setActiveSection] = useState("Home");
+  const { activeSection, setActiveSection } = useActiveSectionContext();
 
   return (
     <header className="z-[999] relative">
