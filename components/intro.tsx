@@ -45,7 +45,7 @@ export default function Intro() {
         </div>
       </div>
 
-      <motion.p
+      <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-4xl  font-medium !leading-[1.5] sm:text-2xl"
@@ -55,7 +55,7 @@ export default function Intro() {
         enjoy building sites & <span className="font-bold italic">apps</span>.
         My focus is <span className="font-bold italic">React</span> (
         <span className="font-bold italic">Next.js</span>)
-      </motion.p>
+      </motion.h1>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
