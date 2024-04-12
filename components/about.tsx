@@ -1,12 +1,27 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { useSetActiveSectionInView } from "@/lib/hooks";
 
 export default function About() {
+  // const { ref, inView } = useInView();
+  // const { setActiveSection } = useActiveSectionContext();
+
+  // useEffect(() => {
+  //   if (inView) {
+  //     setActiveSection("About");
+  //   }
+  // }, [inView]);
+
+  const { ref } = useSetActiveSectionInView("About");
+
   return (
     <motion.section
+      ref={ref}
       id="about"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
