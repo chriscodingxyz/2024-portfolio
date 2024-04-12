@@ -7,7 +7,7 @@ import ProjectsCard from "./projects-card";
 
 export default function Projects() {
   return (
-    <section>
+    <section id="projects" className="scroll-mt-28">
       <SectionHeading>My Projects</SectionHeading>
       <div className="grid gap-6 md:grid-cols-2">
         {projectsData.map((project) => (
