@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import Link from "next/link";
 import { links } from "@/lib/data";
+import clsx from "clsx";
 
 export default function Header() {
   const [activeSection, setActiveSection] = useState("Home");
@@ -34,13 +35,22 @@ export default function Header() {
                 //  delay: 0.1 * index
               }}
               key={link.hash}
-              className="h-3/4 flex items-center justify-center"
+              className="h-3/4 flex items-center justify-center relative"
             >
               <Link
-                className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition"
+                onClick={() => setActiveSection(link.name)}
+                className={clsx(
+                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition",
+                  {
+                    "text-gray-950 ": activeSection === link.name,
+                  }
+                )}
                 href={link.hash}
               >
                 {link.name}
+                {link.name === activeSection && (
+                  <span className="bg-gray-100 rounded-full absolute inset-0 -z-10"></span>
+                )}
               </Link>
             </motion.li>
           ))}
