@@ -1,11 +1,7 @@
 "use client";
 
-import { links } from "@/lib/data";
-import { SectionName } from "@/lib/types";
-import { minify } from "next/dist/build/swc";
+import type { SectionName } from "@/lib/types";
 import React, { createContext, useContext, useState } from "react";
-
-// type SectionName = (typeof links)[number]["name"];
 
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
