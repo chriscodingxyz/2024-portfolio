@@ -1,5 +1,10 @@
+import Intro from "@/components/intro";
 import Image from "next/image";
 
 export default function Home() {
-  return <main>lksfjlkdk</main>;
+  return (
+    <main>
+      <Intro />
+    </main>
+  );
 }
