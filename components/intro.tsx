@@ -8,10 +8,10 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import { useSetActiveSectionInView } from "@/lib/hooks";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
-  const { ref } = useSetActiveSectionInView("Home");
+  const { ref } = useSectionInView("Home");
   return (
     <section
       ref={ref}

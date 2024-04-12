@@ -5,7 +5,7 @@ import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { useSetActiveSectionInView } from "@/lib/hooks";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
   // const { ref, inView } = useInView();
@@ -17,7 +17,7 @@ export default function About() {
   //   }
   // }, [inView]);
 
-  const { ref } = useSetActiveSectionInView("About");
+  const { ref } = useSectionInView("About");
 
   return (
     <motion.section
