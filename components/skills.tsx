@@ -91,7 +91,7 @@ export default function Skills() {
               className="border border-black/50 shadow-lg hover:shadow-xl hover:scale-105 transform transition"
               src={skill.url}
               alt={skill.name}
-              title={`${skill.type}: ${skill.description}`} // Added title attribute for tooltip description
+              title={`${skill.type}: ${skill.description}`}
             />
           </motion.li>
         ))}

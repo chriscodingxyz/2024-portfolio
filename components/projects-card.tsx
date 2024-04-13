@@ -38,13 +38,11 @@ export default function ProjectsCard({
               const techInfo = techData[tag];
               return (
                 <li key={tag} className="">
-                  {/* <img src={techInfo.url} alt={techInfo.name} className="" /> */}
-                  {/* {tag} */}
                   <img
                     className="border border-black/50 shadow-lg hover:shadow-xl hover:scale-105 transform transition"
                     src={techInfo.url}
                     alt={techInfo.name}
-                    title={`${techInfo.type}: ${techInfo.description}`} // Added title attribute for tooltip description
+                    title={`${techInfo.type}: ${techInfo.description}`}
                   />
                 </li>
               );
@@ -56,12 +54,7 @@ export default function ProjectsCard({
           src={imageUrl}
           alt={title}
           quality={95}
-          className=" absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:-right-[initial] group-even:-left-40  group-hover:-translate-x-3 group-hover:translate-y-3 
-        group-hover:-rotate-2 transition
-        group-hover:scale-[1.04]
-        group-even:group-hover:translate-x-3 
-        group-even:group-hover:translate-y-3 
-        group-even:group-hover:rotate-2
+          className=" absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:-right-[initial] group-even:-left-40  group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 transition group-hover:scale-[1.04] group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2
         "
         />
       </section>
