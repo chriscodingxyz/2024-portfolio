@@ -25,8 +25,8 @@ export default function Header() {
       sm:h-[initial] sm:py-0"
       >
         <ul
-          className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500
-        sm:w-[initial] sm:flex-nowrap sm:gap-5"
+          className="flex w-[22rem] items-center justify-center gap-y-1 text-[0.7rem] sm:text-[0.9rem] font-medium text-gray-500
+        sm:w-[initial] flex-nowrap sm:gap-5"
         >
           {links.map((link, index) => (
             <motion.li
