@@ -18,6 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
+      <link
+        rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+      ></link>
       <body
         className={`bg-gray-50 text-gray-960 relative h-[5000px] pt-28 sm:pt-36 ${inter.className}`}
       >

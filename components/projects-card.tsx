@@ -38,7 +38,14 @@ export default function ProjectsCard({
           </div>
 
           <div className="p-4 sm:p-6 sm:w-1/2">
-            <h3 className="text-2xl font-semibold">{title}</h3>
+            <div className="flex justify-between">
+              <h3 className="text-2xl font-semibold">{title}</h3>
+              <div className="flex gap-2">
+                <i className="lab la-github  text-black  text-xl"></i>
+                <i className="las la-external-link-alt text-blue-600  text-xl"></i>
+              </div>
+            </div>
+
             <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
             <ul className="flex flex-wrap gap-2 mt-4">
               {tags.map((tag) => {
