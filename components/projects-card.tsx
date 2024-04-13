@@ -1,6 +1,6 @@
 "use client";
 
-import { projectsData } from "@/lib/data";
+import { projectsData, techData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import React, { useRef } from "react";
@@ -34,14 +34,21 @@ export default function ProjectsCard({
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
           <ul className="flex flex-wrap gap-2 mt-4 sm:mt-auto">
-            {tags.map((tag) => (
-              <li
-                key={tag}
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
-              >
-                {tag}
-              </li>
-            ))}
+            {tags.map((tag) => {
+              const techInfo = techData[tag];
+              return (
+                <li key={tag} className="">
+                  {/* <img src={techInfo.url} alt={techInfo.name} className="" /> */}
+                  {/* {tag} */}
+                  <img
+                    className="border border-black/50 shadow-lg hover:shadow-xl hover:scale-105 transform transition"
+                    src={techInfo.url}
+                    alt={techInfo.name}
+                    title={`${techInfo.type}: ${techInfo.description}`} // Added title attribute for tooltip description
+                  />
+                </li>
+              );
+            })}
           </ul>
         </div>
 
