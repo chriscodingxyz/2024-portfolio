@@ -162,7 +162,7 @@ export const techData = {
   FramerMotion: {
     name: "Framer Motion",
     description: "Production-ready motion library for React",
-    url: "https://img.shields.io/badge/-Framer%20Motion-0055FF?style=flat-square&logo=framer&logoColor=white",
+    url: "https://img.shields.io/badge/-Framer-0055FF?style=flat-square&logo=framer&logoColor=white",
     type: "Frontend",
   },
   React: {
