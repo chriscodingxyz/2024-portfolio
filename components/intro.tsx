@@ -46,7 +46,7 @@ export default function Intro() {
               delay: 0.1,
             }}
           >
-            &#x1F44B;
+            {/* &#x1F44B; */}
           </motion.span>
         </div>
       </div>
