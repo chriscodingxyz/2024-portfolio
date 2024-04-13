@@ -46,7 +46,7 @@ export default function Intro() {
               delay: 0.1,
             }}
           >
-            👋
+            &#128075; {/* Unicode representation for 👋 */}
           </motion.span>
         </div>
       </div>

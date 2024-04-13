@@ -52,6 +52,7 @@ import SectionHeading from "./section-heading";
 import { techData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -87,7 +88,7 @@ export default function Skills() {
             viewport={{ once: true }}
             custom={index}
           >
-            <img
+            <Image
               className="border border-black/50 shadow-lg hover:shadow-xl hover:scale-105 transform transition"
               src={skill.url}
               alt={skill.name}

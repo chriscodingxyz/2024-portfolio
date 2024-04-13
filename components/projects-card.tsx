@@ -38,7 +38,7 @@ export default function ProjectsCard({
               const techInfo = techData[tag];
               return (
                 <li key={tag} className="">
-                  <img
+                  <Image
                     className="border border-black/50 shadow-lg hover:shadow-xl hover:scale-105 transform transition"
                     src={techInfo.url}
                     alt={techInfo.name}
