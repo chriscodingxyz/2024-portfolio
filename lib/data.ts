@@ -8,7 +8,7 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 import cherrynftImg from "@/public/project-nft.png";
 import win98Img from "@/public/project-98.png";
 import eventoImg from "@/public/project-evento.png";
-import type { ProjectDataTypes, TechKey } from "./types";
+import type { ProjectDataTypes } from "./types";
 
 export const links = [
   {
@@ -83,7 +83,7 @@ export const projectsData: ProjectDataTypes[] = [
   },
 
   {
-    title: "rmtDev",
+    title: "Remote Dev",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["TypeScript", "React", "Tailwind", "Tanstack"],
