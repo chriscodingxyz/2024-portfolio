@@ -5,11 +5,13 @@ import SectionHeading from "./section-heading";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import { log } from "console";
 import { sendEmail } from "@/actions/sendEmail";
+import { toast } from "sonner";
+import { useFormStatus } from "react-dom";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const { pending } = useFormStatus();
 
   return (
     <motion.section
@@ -28,13 +30,19 @@ export default function Contact() {
         via this form
       </p>
       <form
-        action={async (formData) => {
-          console.log("client");
-          console.log(formData.get("senderEmail"));
-          console.log(formData.get("senderMessage"));
-          await sendEmail(formData);
-        }}
         className="flex flex-col mt-10"
+        action={async (formData) => {
+          const { data, error } = await sendEmail(formData);
+
+          if (error) {
+            toast.error(error);
+            return;
+          }
+
+          toast.success("Email sent successfully!");
+
+          //   window.location.reload();
+        }}
       >
         <input
           type="email"
@@ -54,8 +62,13 @@ export default function Contact() {
         <button
           className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950"
           type="submit"
+          disabled={pending}
         >
-          Submit
+          {pending ? (
+            <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
+          ) : (
+            "Submit"
+          )}
           <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
         </button>
       </form>
