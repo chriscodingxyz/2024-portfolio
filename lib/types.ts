@@ -13,3 +13,13 @@ export type ProjectDataTypes = {
   siteUrl: string;
   codeUrl: string;
 };
+
+export type ExperienceDataTypes = {
+  date: string;
+  icon: JSX.Element;
+  title: string;
+  description: string;
+  link: string;
+  company: string;
+  location: string;
+};

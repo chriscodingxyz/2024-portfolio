@@ -11,18 +11,7 @@ import { useSectionInView } from "@/lib/hooks";
 import SectionHeading from "./section-heading";
 import { experiencesData } from "@/lib/data";
 import { useInView } from "react-intersection-observer";
-
-interface ExperienceItemProps {
-  item: {
-    date: string;
-    icon: JSX.Element;
-    title: string;
-    description: string;
-    link: string;
-    company: string;
-    location: string;
-  };
-}
+import { ExperienceDataTypes } from "@/lib/types";
 
 export default function Experience() {
   const { ref: sectionRef } = useSectionInView("Experience");
@@ -43,7 +32,7 @@ export default function Experience() {
   );
 }
 
-function ExperienceItem({ item }: ExperienceItemProps) {
+function ExperienceItem({ item }: { item: ExperienceDataTypes }) {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });

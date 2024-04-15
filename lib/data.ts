@@ -1,15 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 import cherrynftImg from "@/public/project-nft.png";
 import win98Img from "@/public/project-98.png";
 import eventoImg from "@/public/project-evento.png";
-import type { ProjectDataTypes } from "./types";
-import { link } from "fs";
+import type { ExperienceDataTypes, ProjectDataTypes } from "./types";
 
 export const links = [
   {
@@ -38,7 +34,7 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const experiencesData: ExperienceDataTypes[] = [
   {
     title: "IT Consultant",
     company: "MacSeven",
