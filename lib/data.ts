@@ -9,6 +9,7 @@ import cherrynftImg from "@/public/project-nft.png";
 import win98Img from "@/public/project-98.png";
 import eventoImg from "@/public/project-evento.png";
 import type { ProjectDataTypes } from "./types";
+import { link } from "fs";
 
 export const links = [
   {
@@ -39,28 +40,35 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "IT Consultant",
+    company: "MacSeven",
+    link: "https://www.mac-seven.com/",
+    location: "London, UK",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Worked as an IT Consultant for clients such as John Lewis, The White Company, Debenhams, and more.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2018 - 2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Junior Developer",
+    company: "NorthCoders",
+    link: "https://northcoders.com/",
+    location: "Remote, UK",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Certified fullstack developer bootcamp. The ciriculum focused on React for the frontend and a SQL database for the backend.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023",
+  },
+  {
+    title: "Freelance Developer",
+    company: "LittleCraftsLondon",
+    link: "https://littlecraftslondon.com/",
+    location: "Remote, UK",
+    description:
+      "I've worked primarily with LittleCraftsLondon.com helping update the website and create new features, especially during holidays and new seasons.",
+    // icon: React.createElement(FaReact),
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023 - present",
   },
 ] as const;
 
