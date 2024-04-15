@@ -76,7 +76,7 @@ export const projectsData: ProjectDataTypes[] = [
   {
     title: "Evento",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "Nextjs fullstack app with a hosted SQL database or local events. Zod for validation, Prisma for database, and Framer Motion for animations.",
     tags: [
       "TypeScript",
       "React",
@@ -96,7 +96,7 @@ export const projectsData: ProjectDataTypes[] = [
   {
     title: "Remote Dev",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Job board for remote developer jobs. It has features like filtering, sorting and pagination. Built with Tanstack and Vercel.",
     tags: ["TypeScript", "React", "Tailwind", "Tanstack"],
     imageUrl: rmtdevImg,
     siteUrl: "https://remotedev.vercel.app/",
@@ -105,7 +105,7 @@ export const projectsData: ProjectDataTypes[] = [
   {
     title: "Cherry NFT",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A fullstack NFT web app for viewing popular NFTs. Uses RestAPI for the data. View by Ethereum or $USD pricing, also via different timeframes",
     tags: [
       "JavaScript",
       "React",
@@ -123,7 +123,7 @@ export const projectsData: ProjectDataTypes[] = [
   {
     title: "Win98 Portfolio",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "Fun single page application portfolio. Nostalgic Windows 98 theme. Features my projects, my skills and my experience.",
     tags: ["JavaScript", "React", "Axios", "Tailwind", "Zustand"],
     imageUrl: win98Img,
     siteUrl: "https://98.chriscoding.xyz/",

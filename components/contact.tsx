@@ -23,7 +23,7 @@ export default function Contact() {
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <SectionHeading>Contact</SectionHeading>
+      <SectionHeading>Contact Me</SectionHeading>
       <p className="text-gray-700">
         Please contact me directly @
         <a href="mailto:chriscoding@icloud.com">chriscoding@icloud.com</a> or
