@@ -3,6 +3,8 @@ import { projectsData, techData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import React, { useRef } from "react";
+import { FaExternalLinkAlt, FaGithub, FaLink } from "react-icons/fa";
+import { FaLinkSlash } from "react-icons/fa6";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -11,6 +13,8 @@ export default function ProjectsCard({
   description,
   tags,
   imageUrl,
+  siteUrl,
+  codeUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -39,21 +43,27 @@ export default function ProjectsCard({
 
           <div className="p-4 sm:p-6 sm:w-1/2">
             <div className="flex justify-between">
-              <h3 className="text-2xl font-semibold">{title}</h3>
+              <h3 className="text-2xl font-semibold">
+                <a href={siteUrl}>{title}</a>
+              </h3>
               <div className="flex gap-2">
-                <i className="lab la-github  text-black  text-xl"></i>
-                <i className="las la-external-link-alt text-blue-600  text-xl"></i>
+                <a href={siteUrl} target="_blank" title="Live Preview">
+                  <FaExternalLinkAlt className=" cursor-pointer" color="blue" />
+                </a>
+                <a href={codeUrl} target="_blank" title="View Code">
+                  <FaGithub className=" cursor-pointer" />
+                </a>
               </div>
             </div>
 
             <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
-            <ul className="flex flex-wrap gap-2 mt-4">
+            <ul className="flex flex-wrap mt-4">
               {tags.map((tag) => {
                 const techInfo = techData[tag];
                 return (
                   <li key={tag} className="">
                     <img
-                      className="border border-black/50 shadow-lg hover:shadow-xl hover:scale-105 transform transition"
+                      className=" shadow-lg hover:shadow-xl hover:scale-105 transform transition"
                       src={techInfo.url}
                       alt={techInfo.name}
                       height={20}

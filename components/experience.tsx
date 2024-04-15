@@ -55,10 +55,7 @@ export default function Experience() {
                 <div className="flex justify-between whitespace-nowrap mt-4 ">
                   <span>
                     @
-                    <a
-                      href={item.link}
-                      className="text-[0.8rem] font-bold hover:underline"
-                    >
+                    <a href={item.link} className="text-[0.8rem] font-bold">
                       {item.company}
                     </a>
                   </span>

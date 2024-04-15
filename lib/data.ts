@@ -88,6 +88,8 @@ export const projectsData: ProjectDataTypes[] = [
       "FramerMotion",
     ],
     imageUrl: eventoImg,
+    siteUrl: "https://evento-seven.vercel.app/",
+    codeUrl: "https://github.com/cherrydub/evento",
   },
 
   {
@@ -96,6 +98,8 @@ export const projectsData: ProjectDataTypes[] = [
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["TypeScript", "React", "Tailwind", "Tanstack"],
     imageUrl: rmtdevImg,
+    siteUrl: "https://remotedev.vercel.app/",
+    codeUrl: "https://github.com/cherrydub/remotedev",
   },
   {
     title: "Cherry NFT",
@@ -103,6 +107,8 @@ export const projectsData: ProjectDataTypes[] = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Tailwind", "FramerMotion"],
     imageUrl: cherrynftImg,
+    siteUrl: "https://nft.cherrydub.com/",
+    codeUrl: "https://github.com/cherrydub/rupee-nft",
   },
   {
     title: "Win98 Portfolio",
@@ -110,6 +116,8 @@ export const projectsData: ProjectDataTypes[] = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Tailwind"],
     imageUrl: win98Img,
+    siteUrl: "https://98.chriscoding.xyz/",
+    codeUrl: "https://github.com/cherrydub/cherrydub98",
   },
 
   // {

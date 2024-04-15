@@ -10,4 +10,6 @@ export type ProjectDataTypes = {
   description: string;
   tags: TechKey[];
   imageUrl: StaticImageData;
+  siteUrl: string;
+  codeUrl: string;
 };
