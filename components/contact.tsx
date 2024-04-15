@@ -25,16 +25,26 @@ export default function Contact() {
         <a href="mailto:chriscoding@icloud.com">chriscoding@icloud.com</a> or
         via this form
       </p>
-      <form action="" className="flex flex-col mt-10">
+      <form
+        action={async (formData) => {
+          console.log(formData.get("senderEmail"));
+          console.log(formData.get("senderMessage"));
+        }}
+        className="flex flex-col mt-10"
+      >
         <input
           type="email"
+          name="senderEmail"
+          required
+          maxLength={100}
           className="h-14 rounded-lg border border-black/10 px-3"
           placeholder="Your Email"
         />
         <textarea
           className="h-52 my-3 rounded-lg border border-black/10 p-3"
-          name=""
-          id=""
+          name="senderMessage"
+          required
+          maxLength={1000}
           placeholder="Your Message"
         ></textarea>
         <button
