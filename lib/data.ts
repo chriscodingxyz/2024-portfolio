@@ -81,6 +81,7 @@ export const projectsData: ProjectDataTypes[] = [
       "TypeScript",
       "React",
       "Nextjs",
+      "ContextAPI",
       "Tailwind",
       "Prisma",
       "PSQL",
@@ -105,7 +106,16 @@ export const projectsData: ProjectDataTypes[] = [
     title: "Cherry NFT",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Tailwind", "FramerMotion"],
+    tags: [
+      "JavaScript",
+      "React",
+      "Axios",
+      "Tanstack",
+      "Tailwind",
+      "ContextAPI",
+      "FramerMotion",
+      "Supabase",
+    ],
     imageUrl: cherrynftImg,
     siteUrl: "https://nft.cherrydub.com/",
     codeUrl: "https://github.com/cherrydub/rupee-nft",
@@ -114,7 +124,7 @@ export const projectsData: ProjectDataTypes[] = [
     title: "Win98 Portfolio",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Tailwind"],
+    tags: ["JavaScript", "React", "Axios", "Tailwind", "Zustand"],
     imageUrl: win98Img,
     siteUrl: "https://98.chriscoding.xyz/",
     codeUrl: "https://github.com/cherrydub/cherrydub98",
@@ -153,7 +163,7 @@ export const techData = {
     name: "JavaScript",
     description:
       "A lightweight, interpreted, or just-in-time compiled programming language with first-class functions.",
-    url: "https://img.shields.io/badge/-JavaScript-6F9C35?style=flat-square&logo=javascript&logoColor=white",
+    url: "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white",
     type: "Language",
   },
   TypeScript: {
@@ -187,11 +197,26 @@ export const techData = {
     url: "https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white",
     type: "Library",
   },
-  Nextjs: {
-    name: "Next.js",
-    description: "The React framework for production",
-    url: "https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white",
-    type: "Framework",
+
+  ContextAPI: {
+    name: "Context API",
+    description:
+      "A way to pass data through the component tree without having to pass props down manually at every level",
+    url: "https://img.shields.io/badge/-Context-61DAFB?style=flat-square&logo=react&logoColor=white",
+    type: "State Management",
+  },
+  Zustand: {
+    name: "Zustand",
+    description:
+      "A small, fast and scaleable bearbones state-management solution",
+    url: "https://img.shields.io/badge/-Zustand-FFB14B?style=flat-square&logo=zustand&logoColor=white",
+    type: "State Management",
+  },
+  Redux: {
+    name: "Redux",
+    description: "A predictable state container for JavaScript apps",
+    url: "https://img.shields.io/badge/-Redux-764ABC?style=flat-square&logo=redux&logoColor=white",
+    type: "State Management",
   },
   Tanstack: {
     name: "Tanstack",
@@ -199,6 +224,12 @@ export const techData = {
       "A collection of tools for building web applications with React",
     url: "https://img.shields.io/badge/-Tanstack-FF4154?style=flat-square&logo=react%20query&logoColor=white",
     type: "Frontend",
+  },
+  Nextjs: {
+    name: "Next.js",
+    description: "The React framework for production",
+    url: "https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white",
+    type: "Framework",
   },
   Express: {
     name: "Express",
