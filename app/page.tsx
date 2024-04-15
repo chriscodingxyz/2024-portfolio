@@ -6,6 +6,7 @@ import Projects from "@/components/projects";
 import ScrollUp from "@/components/scroll-up";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
+import ViewMobile from "@/components/view-mobile";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Contact />
+      <ViewMobile />
       <ScrollUp />
     </main>
   );
