@@ -89,7 +89,8 @@ export default function Intro() {
         </Link>
         <a
           href="https://docs.google.com/document/d/e/2PACX-1vR930o8G8wVbP99_ZA3b-JErZJkwTvZjsN4h4fIdenTdRXqiAhuuBlGJrnZfFN2RfF58b7ol2qTJzDv/pub"
-          download
+          // download
+          target="_blank"
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10"
         >
           Download CV{" "}
