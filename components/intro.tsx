@@ -3,6 +3,8 @@
 import Image from "next/image";
 import React from "react";
 import profileImg from "@/public/punk1534.png";
+import profileImg2 from "@/public/5409.jpg";
+import profileImg3 from "@/public/pepefancy.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -28,7 +30,7 @@ export default function Intro() {
             transition={{ duration: 0.2, type: "tween" }}
           >
             <Image
-              src={profileImg}
+              src={profileImg3}
               alt="profile"
               width={192}
               height={192}
