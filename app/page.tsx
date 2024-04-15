@@ -3,6 +3,7 @@ import Contact from "@/components/contact";
 import Experience from "@/components/experience";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
+import ScrollUp from "@/components/scroll-up";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Contact />
+      <ScrollUp />
     </main>
   );
 }
