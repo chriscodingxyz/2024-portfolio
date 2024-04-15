@@ -14,7 +14,7 @@ import { useInView } from "react-intersection-observer";
 import { ExperienceDataTypes } from "@/lib/types";
 
 export default function Experience() {
-  const { ref: sectionRef } = useSectionInView("Experience");
+  const { ref: sectionRef } = useSectionInView("Experience", 0.5);
 
   return (
     <section
