@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import SectionHeading from "./section-heading";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -12,6 +12,7 @@ import { useFormStatus } from "react-dom";
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
   const { pending } = useFormStatus();
+  const formRef = useRef<HTMLFormElement>(null);
 
   return (
     <motion.section
@@ -30,6 +31,7 @@ export default function Contact() {
         via this form
       </p>
       <form
+        ref={formRef}
         className="flex flex-col mt-10"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
@@ -40,8 +42,7 @@ export default function Contact() {
           }
 
           toast.success("Email sent successfully!");
-
-          //   window.location.reload();
+          formRef.current?.reset();
         }}
       >
         <input
