@@ -44,7 +44,9 @@ export default function ProjectsCard({
           <div className="p-4 sm:p-6 sm:w-1/2">
             <div className="flex justify-between">
               <h3 className="text-2xl font-semibold">
-                <a href={siteUrl}>{title}</a>
+                <a href={siteUrl} target="_blank">
+                  {title}
+                </a>
               </h3>
               <div className="flex gap-2">
                 <a href={siteUrl} target="_blank" title="Live Preview">
