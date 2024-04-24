@@ -21,7 +21,7 @@ export default function About() {
       <p className="mb-3">
         Fullstack web developer with a passion for React.js and Next.js. With a
         strong background in IT, I love crafting both front-end magic and robust
-        back-end solutions. Let's build something amazing together! 💻✨
+        back-end solutions. Lets build something amazing together! 💻✨
       </p>
     </motion.section>
   );
