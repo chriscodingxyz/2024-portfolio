@@ -19,15 +19,9 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        With innate curiosity and a decade of experience studying and teaching
-        applied logic, I am a professional problem solver eager to join an agile
-        and innovation-driven development team on a mission to help both people
-        and the world (wide-web).
-      </p>
-      <p>
-        A fast and avid learner, I quickly grasp new concepts and technologies
-        and creatively use them to design efficient, reliable, and user-focussed
-        software
+        Fullstack web developer with a passion for React.js and Next.js. With a
+        strong background in IT, I love crafting both front-end magic and robust
+        back-end solutions. Let's build something amazing together! 💻✨
       </p>
     </motion.section>
   );
