@@ -7,6 +7,9 @@ import win98Img from "@/public/project-98.png";
 import eventoImg from "@/public/project-evento.png";
 import type { ExperienceDataTypes, ProjectDataTypes } from "./types";
 
+export const CVLINK =
+  "https://docs.google.com/document/d/15Hb7FWHFeAePLpNU4iN9-I_Rb5akYajwZWFwyPHsHag/edit?usp=sharing";
+
 export const links = [
   {
     name: "Home",
