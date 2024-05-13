@@ -8,7 +8,7 @@ import eventoImg from "@/public/project-evento.png";
 import type { ExperienceDataTypes, ProjectDataTypes } from "./types";
 
 export const CVLINK =
-  "https://docs.google.com/document/d/15Hb7FWHFeAePLpNU4iN9-I_Rb5akYajwZWFwyPHsHag/edit?usp=sharing";
+  "https://docs.google.com/document/d/1OPZ7AvdwdWzd3o_vCGJ2zDj6sVUScl-3fwgepYFS2-g/edit?usp=sharing";
 
 export const links = [
   {
