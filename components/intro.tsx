@@ -110,7 +110,7 @@ export default function Intro() {
             <BsLinkedin />
           </a>
           <a
-            href="https://github.com/cherrydub"
+            href="https://github.com/chriscodingxyz"
             target="_blank"
             className="bg-white p-4 flex items-center gap-2 rounded-full text-gray-700 text-[1.35rem] focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition border border-black/10"
           >
