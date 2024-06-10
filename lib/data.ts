@@ -89,7 +89,7 @@ export const projectsData: ProjectDataTypes[] = [
     ],
     imageUrl: eventoImg,
     siteUrl: "https://evento-seven.vercel.app/",
-    codeUrl: "https://github.com/cherrydub/evento",
+    codeUrl: "https://github.com/chriscodingxyz/evento",
   },
 
   {
@@ -99,7 +99,7 @@ export const projectsData: ProjectDataTypes[] = [
     tags: ["TypeScript", "React", "Tailwind", "Tanstack"],
     imageUrl: rmtdevImg,
     siteUrl: "https://remotedev.vercel.app/",
-    codeUrl: "https://github.com/cherrydub/remotedev",
+    codeUrl: "https://github.com/chriscodingxyz/remotedev",
   },
   {
     title: "Cherry NFT",
@@ -117,7 +117,7 @@ export const projectsData: ProjectDataTypes[] = [
     ],
     imageUrl: cherrynftImg,
     siteUrl: "https://nft.chriscoding.xyz/",
-    codeUrl: "https://github.com/cherrydub/rupee-nft",
+    codeUrl: "https://github.com/chriscodingxyz/rupee-nft",
   },
   {
     title: "Win98 Portfolio",
@@ -126,7 +126,7 @@ export const projectsData: ProjectDataTypes[] = [
     tags: ["JavaScript", "React", "Axios", "Tailwind", "Zustand"],
     imageUrl: win98Img,
     siteUrl: "https://98.chriscoding.xyz/",
-    codeUrl: "https://github.com/cherrydub/cherrydub98",
+    codeUrl: "https://github.com/chriscodingxyz/cherrydub98",
   },
 
   // {
