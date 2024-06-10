@@ -116,7 +116,7 @@ export const projectsData: ProjectDataTypes[] = [
       "Supabase",
     ],
     imageUrl: cherrynftImg,
-    siteUrl: "https://nft.cherrydub.com/",
+    siteUrl: "https://nft.chriscoding.xyz/",
     codeUrl: "https://github.com/cherrydub/rupee-nft",
   },
   {
