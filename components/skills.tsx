@@ -90,11 +90,9 @@ export default function Skills() {
             custom={index}
           >
             <img
-              className="border border-black/50 shadow-lg hover:shadow-xl hover:scale-105 transform transition"
+              className="border border-black/10 rounded shadow-md hover:shadow-lg hover:scale-105 transform transition duration-300"
               src={skill.url}
               alt={skill.name}
-              //   width={115}
-              //   height={20}
               title={`${skill.type}: ${skill.description}`}
             />
           </motion.li>

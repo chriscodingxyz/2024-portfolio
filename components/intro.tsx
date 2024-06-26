@@ -2,9 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-
-import profileImg3 from "@/public/pepefancy.png";
-import profileImg4 from "@/public/hs1.png";
 import profileImg5 from "@/public/hs2.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -18,11 +15,12 @@ import { CVLINK } from "@/lib/data";
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setTimeOfLastClick, setActiveSection } = useActiveSectionContext();
+
   return (
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28 "
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -33,12 +31,12 @@ export default function Intro() {
           >
             <Image
               src={profileImg5}
-              alt="profile"
+              alt="Chris"
               width={192}
               height={192}
               priority
               className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl hover:scale-150 transition"
-            />{" "}
+            />
           </motion.div>
 
           <motion.span
@@ -70,6 +68,7 @@ export default function Intro() {
         <span className="font-bold italic text-blue-600">React</span> (
         <span className="font-bold italic">Next.js</span>)
       </motion.h1>
+
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -78,44 +77,41 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className=" group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
         >
           Contact me here{" "}
-          <BsArrowRight
-            className="opacity-70
-          group-hover:translate-x-1 
-          "
-          />
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
-        <a
-          // href="https://docs.google.com/document/d/e/2PACX-1vR930o8G8wVbP99_ZA3b-JErZJkwTvZjsN4h4fIdenTdRXqiAhuuBlGJrnZfFN2RfF58b7ol2qTJzDv/pub"
+
+        <Link
           href={CVLINK}
-          // download
           target="_blank"
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition cursor-pointer" />
-        </a>
+        </Link>
+
         <div className="flex gap-2">
-          <a
+          <Link
             href="https://www.linkedin.com/in/wisniewskichris/"
             target="_blank"
             className="bg-white p-4 flex items-center gap-2 rounded-full text-gray-700 focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"
           >
             <BsLinkedin />
-          </a>
-          <a
+          </Link>
+
+          <Link
             href="https://github.com/chriscodingxyz"
             target="_blank"
             className="bg-white p-4 flex items-center gap-2 rounded-full text-gray-700 text-[1.35rem] focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition border border-black/10"
           >
             <FaGithubSquare />
-          </a>
+          </Link>
         </div>
       </motion.div>
     </section>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { links } from "@/lib/data";
 import clsx from "clsx";
@@ -18,26 +18,17 @@ export default function Header() {
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
         transition={{ duration: 0.5 }}
-      ></motion.div>
+      />
 
-      <nav
-        className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem]
-      sm:h-[initial] sm:py-0"
-      >
-        <ul
-          className="flex w-[22rem] items-center justify-center gap-y-1 text-[0.7rem] sm:text-[0.9rem] font-medium text-gray-500
-        sm:w-[initial] flex-nowrap sm:gap-5"
-        >
-          {links.map((link, index) => (
+      <nav className="fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-auto sm:py-0">
+        <ul className="flex w-[22rem] items-center justify-center gap-y-1 text-[0.7rem] sm:text-[0.9rem] font-medium text-gray-500 sm:w-auto sm:gap-5">
+          {links.map((link) => (
             <motion.li
+              key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{
-                duration: 0.5,
-                //  delay: 0.1 * index
-              }}
-              key={link.hash}
-              className="h-3/4 flex items-center justify-center relative"
+              transition={{ duration: 0.5 }}
+              className="relative h-3/4 flex items-center justify-center"
             >
               <Link
                 onClick={() => {
@@ -47,7 +38,7 @@ export default function Header() {
                 className={clsx(
                   "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition",
                   {
-                    "text-gray-950 ": activeSection === link.name,
+                    "text-gray-950": activeSection === link.name,
                   }
                 )}
                 href={link.hash}
@@ -55,14 +46,10 @@ export default function Header() {
                 {link.name}
                 {link.name === activeSection && (
                   <motion.span
-                    className="bg-gray-100 rounded-full absolute inset-0 -z-10"
+                    className="absolute inset-0 -z-10 bg-gray-100 rounded-full"
                     layoutId="activeSection"
-                    transition={{
-                      type: "spring",
-                      stiffness: 380,
-                      damping: 30,
-                    }}
-                  ></motion.span>
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
                 )}
               </Link>
             </motion.li>

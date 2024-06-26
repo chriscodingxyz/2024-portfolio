@@ -39,14 +39,15 @@ export const links = [
 
 export const experiencesData: ExperienceDataTypes[] = [
   {
-    title: "IT Consultant",
-    company: "MacSeven",
-    link: "https://www.mac-seven.com/",
-    location: "London, UK",
+    title: "Freelance Developer",
+    company: "LittleCraftsLondon",
+    link: "https://littlecraftslondon.com/",
+    location: "Remote, UK",
     description:
-      "Worked as an IT Consultant for clients such as John Lewis, The White Company, Debenhams, and more.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2018 - 2022",
+      "I've worked primarily with LittleCraftsLondon.com helping update the website and create new features, especially during holidays and new seasons.",
+    // icon: React.createElement(FaReact),
+    icon: React.createElement(FaReact),
+    date: "2023 - present",
   },
   {
     title: "Junior Developer",
@@ -59,15 +60,14 @@ export const experiencesData: ExperienceDataTypes[] = [
     date: "2023",
   },
   {
-    title: "Freelance Developer",
-    company: "LittleCraftsLondon",
-    link: "https://littlecraftslondon.com/",
-    location: "Remote, UK",
+    title: "IT Consultant",
+    company: "MacSeven",
+    link: "https://www.mac-seven.com/",
+    location: "London, UK",
     description:
-      "I've worked primarily with LittleCraftsLondon.com helping update the website and create new features, especially during holidays and new seasons.",
-    // icon: React.createElement(FaReact),
-    icon: React.createElement(FaReact),
-    date: "2023 - present",
+      "Worked as an IT Consultant for clients such as John Lewis, The White Company, Debenhams, and more.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2018 - 2022",
   },
 ] as const;
 
@@ -242,12 +242,12 @@ export const techData = {
     url: "https://img.shields.io/badge/-Node-339933?style=flat-square&logo=node.js&logoColor=white",
     type: "Backend",
   },
-  MySQL: {
-    name: "MySQL",
-    description: "Open-source relational database management system",
-    url: "https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white",
-    type: "Database",
-  },
+  // MySQL: {
+  //   name: "MySQL",
+  //   description: "Open-source relational database management system",
+  //   url: "https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white",
+  //   type: "Database",
+  // },
   PSQL: {
     name: "PSQL",
     description: "Open-source relational database management system",
