@@ -74,7 +74,7 @@ export const experiencesData: ExperienceDataTypes[] = [
 
 export const projectsData: ProjectDataTypes[] = [
   {
-    title: "TailsID",
+    title: "TailsID (*beta*)",
     description:
       "Next.js app for managing QR code pet tags. Users can log in, sign up, manage accounts, and order custom QR code tags for their pets",
     tags: [
