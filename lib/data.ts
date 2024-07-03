@@ -5,6 +5,7 @@ import rmtdevImg from "@/public/rmtdev.png";
 import cherrynftImg from "@/public/project-nft.png";
 import win98Img from "@/public/project-98.png";
 import eventoImg from "@/public/project-evento.png";
+import tailsidImg from "@/public/project-tailsid.png";
 import type { ExperienceDataTypes, ProjectDataTypes } from "./types";
 
 export const CVLINK =
@@ -72,6 +73,26 @@ export const experiencesData: ExperienceDataTypes[] = [
 ] as const;
 
 export const projectsData: ProjectDataTypes[] = [
+  {
+    title: "TailsID",
+    description:
+      "Next.js app for managing QR code pet tags. Users can log in, sign up, manage accounts, and order custom QR code tags for their pets",
+    tags: [
+      "TypeScript",
+      "React",
+      "Nextjs",
+      "ContextAPI",
+      "Tailwind",
+      "Prisma",
+      "PSQL",
+      "Zod",
+      "FramerMotion",
+      "Supabase",
+    ],
+    imageUrl: tailsidImg,
+    siteUrl: "https://tailsid.chriscoding.xyz/",
+    codeUrl: "https://github.com/chriscodingxyz/tailsid",
+  },
   {
     title: "Evento",
     description:
