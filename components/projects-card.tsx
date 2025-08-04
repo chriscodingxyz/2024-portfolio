@@ -44,7 +44,7 @@ export default function ProjectsCard({
           <div className="p-4 sm:p-6 sm:w-1/2 flex flex-col">
             <div className="flex justify-between">
               <h3 className="text-2xl font-semibold">{title}</h3>
-              {title !== "COVID-19 Simulation Dashboard" && (
+              {title !== "Epidemiological Risk Modeling and Visualization Platform" && (
                 <div className="flex gap-2">
                   {title !== "Google Cloud x MLB Hackathon Project" && (
                     <a href={siteUrl} target="_blank" title="Live Preview">

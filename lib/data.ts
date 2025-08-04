@@ -32,12 +32,12 @@ export const links = [
 
 export const experiencesData: ExperienceDataTypes[] = [
   {
-    title: "Information Technology Summer Intern",
+    title: "Software Engineer Intern",
     company: "Ware Malcomb",
     link: "https://www.waremalcomb.com/",
     location: "Irvine, California, United States",
     description:
-      "Worked as an IT Intern during Summer 2022, contributing to IT systems support and gaining hands-on experience in a professional IT environment.",
+      "Built an internal notification system with Python and PowerShell, integrating with SendGrid API to automate   email alerts for upcoming password expirations.",
     icon: React.createElement(CgWorkAlt),
     date: "June 2022 - July 2022",
   },
@@ -66,18 +66,19 @@ export const projectsData: ProjectDataTypes[] = [
     codeUrl: "https://github.com/GentleOtaku/GoatSquad",
   },
   {
-    title: "COVID-19 Simulation Dashboard",
+    title: "Epidemiological Risk Modeling and Visualization Platform",
     description:
-      "A Flask-based interactive dashboard providing intuitive data insights through simulation of COVID-19 spread.",
+      "Predictive modeling pipeline for COVID transmission risk in schools using pandas, NumPy, and scikit-learn. React/Django dashboard on GCP.",
     tags: [
-      "Flask",
+      "React",
+      "Django",
       "Python",
+      "pandas",
+      "NumPy",
+      "scikit-learn",
+      "GCP",
       "Data Visualization",
-      "Dashboard",
-      "Simulation",
-      "COVID-19",
-      "Interactive",
-      "Data Analysis"
+      "Machine Learning"
     ],
     imageUrl: covidImg,
     siteUrl: "#",
@@ -330,6 +331,48 @@ export const techData = {
     description: "Data analysis and insights, often involving statistical techniques.",
     url: "https://img.shields.io/badge/-Data%20Analysis-3F51B5?style=flat-square",
     type: "Analytics",
+  },
+  Django: {
+    name: "Django",
+    description: "A high-level Python web framework that encourages rapid development.",
+    url: "https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white",
+    type: "Backend",
+  },
+  pandas: {
+    name: "pandas",
+    description: "Data manipulation and analysis library for Python.",
+    url: "https://img.shields.io/badge/-pandas-150458?style=flat-square&logo=pandas&logoColor=white",
+    type: "Data Science",
+  },
+  NumPy: {
+    name: "NumPy",
+    description: "Fundamental package for scientific computing with Python.",
+    url: "https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white",
+    type: "Data Science",
+  },
+  "scikit-learn": {
+    name: "scikit-learn",
+    description: "Machine learning library for Python.",
+    url: "https://img.shields.io/badge/-scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white",
+    type: "Machine Learning",
+  },
+  GCP: {
+    name: "GCP",
+    description: "Google Cloud Platform for cloud computing services.",
+    url: "https://img.shields.io/badge/-GCP-4285F4?style=flat-square&logo=google-cloud&logoColor=white",
+    type: "Cloud",
+  },
+  "Predictive Modeling": {
+    name: "Predictive Modeling",
+    description: "Statistical techniques for predicting future outcomes based on historical data.",
+    url: "https://img.shields.io/badge/-Predictive%20Modeling-FF6B6B?style=flat-square",
+    type: "Machine Learning",
+  },
+  Epidemiology: {
+    name: "Epidemiology",
+    description: "Study of disease patterns and health outcomes in populations.",
+    url: "https://img.shields.io/badge/-Epidemiology-8E44AD?style=flat-square",
+    type: "Health Science",
   }
 } as const;
 

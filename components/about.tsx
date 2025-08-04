@@ -21,7 +21,7 @@ export default function About() {
       <p className="mb-3">
         I thrive on building impactful projects that bridge technology and user experience. My most notable work includes a Google Cloud x MLB Hackathon project, where I developed a full-stack fan engagement platform using React, Flask, and Tailwind CSS. This app features real-time game schedules, AI-driven multilingual news digests, and a k-means clustering recommendation system.
         <br/><br/>
-        Beyond hackathons, I&apos;ve built a COVID-19 simulation dashboard in Flask, providing intuitive data insights through an interactive UI. My passion lies in leveraging AI and software engineering to create seamless, data-driven experiences. Always open to collaborating on innovative projects and connecting with like-minded engineers!
+        Beyond hackathons, I&apos;ve built an epidemiological risk modeling and visualization platform in Flask, providing intuitive data insights through an interactive UI. My passion lies in leveraging AI and software engineering to create seamless, data-driven experiences. Always open to collaborating on innovative projects and connecting with like-minded engineers!
       </p>
     </motion.section>
   );
